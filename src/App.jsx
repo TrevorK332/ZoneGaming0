@@ -14,6 +14,8 @@ import Detail01 from "./components/Detail01.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Strategy from "./components/Strategy.jsx";
 import Action from "./components/Action.jsx";
+import Detailadv from "./components/Detailsadv.jsx";
+import Detailsstr from "./components/Detailsstr.jsx";
 //
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
               <Route path="/products" element={<Products/>}></Route>
               <Route path="/games" element={<Games/>}></Route>
               <Route path="/product" element={<Detail01/>}></Route>
+              <Route path="/productadv" element={<Detailadv/>}></Route>
+              <Route path="/productstr" element={<Detailsstr/>}></Route>
               <Route path="/contact" element={<Contact/>}></Route>
               <Route path="/category" element={<Categories/>}></Route>
               <Route path="/category_page_2" element={<Category01/>}></Route>

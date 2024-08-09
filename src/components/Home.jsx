@@ -1,6 +1,6 @@
 import Head from "./Head.jsx";
 import {Link} from "react-router-dom";
-//
+
 export default function Home() {
     return (
         <>
@@ -24,7 +24,7 @@ export default function Home() {
                         </div>
                         <div className="col-lg-4 offset-lg-2">
                             <div className="right-image">
-                            <Link to="/product"><img src="public/assets/images/banner-image.jpg" alt=""/></Link>
+                            <Link to="/product"><img src="public/assets/images/infamousbanner.jpg" alt=""/></Link>
                                 <span className="price">$22</span>
                                 <span className="offer">-40%</span>
                             </div>

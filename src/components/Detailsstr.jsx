@@ -1,7 +1,7 @@
 import Head from "./Head.jsx";
 import {Link} from "react-router-dom";
 
-export default function Detail01() {
+export default function Detailsstr() {
 
     return (
         <>
@@ -10,7 +10,7 @@ export default function Detail01() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <h3>WarFrame VeilBreaker®</h3>
+                            <h3>Dragon Creed®</h3>
                             <span className="breadcrumb"><Link to="/">Home</Link> {">"} <Link
                                 to="/games">Games</Link> {">"} Game Details</span>
                         </div>
@@ -23,12 +23,12 @@ export default function Detail01() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="left-image">
-                                <img src="public/assets/images/trending-01.jpg" alt=""/>
+                                <img src="public/assets/images/trending-04.jpg" alt=""/>
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
-                            <h4>WarFrame VeilBreaker®</h4>
-                            <span className="price"><em>$28</em> $18</span>
+                            <h4>Dragon Creed®</h4>
+                            <span className="price"><em>$32</em> $22</span>
                             <p></p>
                             <form id="qty" action="#">
                                 <input type="qty" className="form-control" id="1" aria-describedby="quantity"
@@ -36,8 +36,8 @@ export default function Detail01() {
                                 <button type="submit"><i className="fa fa-shopping-bag"></i> ADD TO CART</button>
                             </form>
                             <ul>
-                                <li><span>Game ID:</span> WarFrame VeilBreaker</li>
-                                <li><span>Genre:</span> <Link to="/category_action">Action</Link></li>
+                                <li><span>Game ID:</span> Dragon Creed</li>
+                                <li><span>Genre:</span> <Link to="/category_strategy">Adventure</Link></li>
                             </ul>
                         </div>
                         <div className="col-lg-12">
@@ -67,10 +67,7 @@ export default function Detail01() {
                                     <div className="tab-content" id="myTabContent">
                                         <div className="tab-pane fade show active" id="description" role="tabpanel"
                                              aria-labelledby="description-tab">
-                                            <p>On a Murex above Deimos, Kahl-175 removes his Narmer Veil.
-                                                His distress signal is picked up by Daughter, who lends her support in exchange for information on Narmer's new leader Pazuul.
-                                                After freeing captives and escaping, Kahl sets up a base of operations at the Drifter's Camp.
-                                                His campaign to free his brothers is only just beginning.</p>
+                                            <p>This is a role-playing game based around building a small team of monsters to battle other monsters in a quest to become the best.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -86,6 +83,6 @@ export default function Detail01() {
                     </div>
                 </div>
             </footer>
-        </>
+                </>
     )
 }

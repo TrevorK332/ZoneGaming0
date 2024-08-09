@@ -47,123 +47,123 @@ export default function Action() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/trending-03.jpg" alt=""/></Link>
-                                    <span className="price"><em>$45</em>$30</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Super People</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/infamous.png" alt=""/></Link>
-                                    <span className="price"><em>$38</em>$26</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Infamous</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/prototype.png" alt=""/></Link>
-                                    <span className="price"><em>$32</em>$22</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Prototype</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/gloomHaven.png" alt=""/></Link>
-                                    <span className="price"><em>$45</em>$30</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Gloom Haven</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/brawl.png" alt=""/></Link>
-                                    <span className="price"><em>$28</em>$18</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Brawlhalla</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/pubg.png" alt=""/></Link>
-                                    <span className="price"><em>$45</em>$30</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>PUBG Battlegrounds</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/apexlegends.png" alt=""/></Link>
-                                    <span className="price"><em>$38</em>$26</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Apex Legends</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/CODMW.png" alt=""/></Link>
-                                    <span className="price"><em>$30</em>$20</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Call of Duty Modern Warfare II</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">
-                            <div className="item">
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/destiny.png" alt=""/></Link>
-                                    <span className="price"><em>$32</em>$22</span>
-                                </div>
-                                <div className="down-content">
-                                    <span className="category">Action</span>
-                                    <h4>Destiny 2</h4>
-                                    <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/trending-03.jpg" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$45</em>$30</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Super People</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/infamous.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$38</em>$26</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Infamous</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/prototype.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$32</em>$22</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Prototype</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/gloomHaven.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$45</em>$30</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Gloom Haven</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/brawl.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$28</em>$18</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Brawlhalla</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/pubg.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$45</em>$30</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>PUBG Battlegrounds</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/apexlegends.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$38</em>$26</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Apex Legends</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/CODMW.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$30</em>$20</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Call of Duty Modern Warfare II</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 act">*/}
+                        {/*    <div className="item">*/}
+                        {/*        <div className="thumb">*/}
+                        {/*            <Link to="/product"><img src="public/assets/images/destiny.png" alt=""/></Link>*/}
+                        {/*            <span className="price"><em>$32</em>$22</span>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="down-content">*/}
+                        {/*            <span className="category">Action</span>*/}
+                        {/*            <h4>Destiny 2</h4>*/}
+                        {/*            <Link to="/product"><i className="fa fa-shopping-bag"></i></Link>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>
