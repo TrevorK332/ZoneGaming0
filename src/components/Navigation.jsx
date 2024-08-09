@@ -38,7 +38,7 @@ export default function Navigation() {
                                         <Link to="/help" className="nav-link active" aria-current="page">Help</Link>
                                     </li>
                                 </ul>
-                                <a className='menu-trigger'>
+                                <a className="menu-trigger">
                                     <span>Menu</span>
                                 </a>
 
