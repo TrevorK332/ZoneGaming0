@@ -11,7 +11,7 @@ export default function Action() {
                     <div className="row">
                         <div className="col-lg-12">
                             <h3>CATEGORIES</h3>
-                            <span className="breadcrumb"><Link to="/">Home</Link> {">"} <Link to="/shop">Categories</Link> {">"} Action</span>
+                            <span className="breadcrumb"><Link to="/">Home</Link> {">"} <Link to="/category">Categories</Link> {">"} Action</span>
                         </div>
                     </div>
                 </div>
@@ -21,16 +21,16 @@ export default function Action() {
                 <div className="container">
                     <ul className="trending-filter">
                         <li>
-                            <Link to="/shop" data-filter="*">Show All</Link>
+                            <Link to="/category" data-filter="*">Show All</Link>
                         </li>
                         <li>
-                            <Link to="/adventure" data-filter=".adv">Adventure</Link>
+                            <Link to="/category_adventure" data-filter=".adv">Adventure</Link>
                         </li>
                         <li>
-                            <Link to="/strategy" data-filter=".str">Strategy</Link>
+                            <Link to="/category_strategy" data-filter=".str">Strategy</Link>
                         </li>
                         <li>
-                            <Link className="is_active" to="/action" data-filter=".act">Action</Link>
+                            <Link className="is_active" to="/category_action" data-filter=".act">Action</Link>
                         </li>
                     </ul>
                     <div className="row trending-box">

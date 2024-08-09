@@ -20,16 +20,16 @@ export default function Categories() {
                 <div className="container">
                     <ul className="trending-filter">
                         <li>
-                            <Link className="is_active" to="/shop" data-filter="*">Show All</Link>
+                            <Link className="is_active" to="/category" data-filter="*">Show All</Link>
                         </li>
                         <li>
-                            <Link to="/adventure" data-filter=".adv">Adventure</Link>
+                            <Link to="/category_adventure" data-filter=".adv">Adventure</Link>
                         </li>
                         <li>
-                            <Link to="/strategy" data-filter=".str">Strategy</Link>
+                            <Link to="/category_strategy" data-filter=".str">Strategy</Link>
                         </li>
                         <li>
-                            <Link to="/action" data-filter=".act">Action</Link>
+                            <Link to="/category_action" data-filter=".act">Action</Link>
                         </li>
                     </ul>
                     <div className="row trending-box">
@@ -193,8 +193,8 @@ export default function Categories() {
                     <div className="row">
                         <div className="col-lg-12">
                             <ul className="pagination">
-                                <li><Link className="is_active" to="/shop">1</Link></li>
-                                <li><Link to="/shop01">2</Link></li>
+                                <li><Link className="is_active" to="/category">1</Link></li>
+                                <li><Link to="/category_page_2">2</Link></li>
                             </ul>
                         </div>
                     </div>

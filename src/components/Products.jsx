@@ -43,7 +43,7 @@ export default function Products() {
                         </div>
                         <div className="col-lg-6">
                             <div className="main-button">
-                                <Link to="/shop">View All</Link>
+                                <Link to="/category">View All</Link>
                             </div>
                             </div>
                         </div>

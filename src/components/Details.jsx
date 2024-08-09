@@ -58,7 +58,7 @@ export default function Details() {
                             </form>
                             <ul>
                                 <li><span>Game ID:</span>{product.product}</li>
-                                <li><span>Genre:</span> <Link to="/action">Action</Link></li>
+                                <li><span>Genre:</span> <Link to="/category_action">Action</Link></li>
                                 <li><span>Multi-tags:</span> <a href="#">War</a>, <a href="#">Battle</a>, <a
                                     href="#">Royal</a></li>
                             </ul>
@@ -123,7 +123,7 @@ export default function Details() {
                         </div>
                         <div className="col-lg-6">
                             <div className="main-button">
-                                <Link to="/shop">View All</Link>
+                                <Link to="/category">View All</Link>
                             </div>
                         </div>
                         <div className="col-lg col-sm-6 col-xs-12">

@@ -37,9 +37,8 @@ export default function Detail01() {
                             </form>
                             <ul>
                                 <li><span>Game ID:</span> COD MMII</li>
-                                <li><span>Genre:</span> <Link to="/action">Action</Link></li>
-                                <li><span>Multi-tags:</span> <a href="#">War</a>, <a href="#">Battle</a>, <a
-                                    href="#">Royal</a></li>
+                                <li><span>Genre:</span> <Link to="/category_action">Action</Link></li>
+                                <li><span>Multi-tags:</span> <Link to="/category_action">Action</Link> </li>
                             </ul>
                         </div>
                         <div className="col-lg-12">
@@ -104,7 +103,7 @@ export default function Detail01() {
                         </div>
                         <div className="col-lg-6">
                             <div className="main-button">
-                                <Link to="/shop">View All</Link>
+                                <Link to="/category">View All</Link>
                             </div>
                         </div>
                         <div className="col-lg col-sm-6 col-xs-12">

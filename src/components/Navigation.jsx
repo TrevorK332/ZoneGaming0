@@ -12,7 +12,7 @@ export default function Navigation() {
                             <nav className="main-nav">
 
                     <Link to="/" className="nav-link active" aria-current="page"
-                          style={{fontWeight: "bolder", fontSize: "30px", color : "white"}}>ZONE</Link>
+                          style={{fontWeight: "bolder", fontSize: "50px", color : "white"}}>ZONE</Link>
 
 
                                 <ul className="nav">
@@ -23,7 +23,7 @@ export default function Navigation() {
                                         <Link to="/games" className="nav-link active" aria-current="page">Games</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link to="/shop" className="nav-link active"
+                                        <Link to="/category" className="nav-link active"
                                               aria-current="page">Categories</Link>
                                     </li>
                                     {/*<li className="nav-item">*/}

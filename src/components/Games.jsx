@@ -27,7 +27,7 @@ export default function Games() {
                         </div>
                         <div className="col-lg-6">
                             <div className="main-button">
-                                <Link to="/shop">View All</Link>
+                                <Link to="/category">View All</Link>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
@@ -97,7 +97,7 @@ export default function Games() {
                         </div>
                         <div className="col-lg-6">
                             <div className="main-button">
-                                <Link to="/shop">View All</Link>
+                                <Link to="/category">View All</Link>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-6">
@@ -241,7 +241,7 @@ export default function Games() {
                                             <h2>Go Pre-Order Buy & Get Best <em>Prices</em> For You!</h2>
                                         </div>
                                         <div className="main-button">
-                                            <Link to="/shop">Shop Now</Link>
+                                            <Link to="/category">Shop Now</Link>
                                         </div>
                                     </div>
                                 </div>

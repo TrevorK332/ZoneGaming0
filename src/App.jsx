@@ -29,12 +29,12 @@ function App() {
               <Route path="/games" element={<Games/>}></Route>
               <Route path="/product" element={<Detail01/>}></Route>
               <Route path="/contact" element={<Contact/>}></Route>
-              <Route path="/shop" element={<Categories/>}></Route>
-              <Route path="/shop01" element={<Category01/>}></Route>
+              <Route path="/category" element={<Categories/>}></Route>
+              <Route path="/category_page_2" element={<Category01/>}></Route>
               <Route path="/help" element={<Help/>}></Route>
-              <Route path="/adventure" element={<Adventure/>}></Route>
-              <Route path="/strategy" element={<Strategy/>}></Route>
-              <Route path="/action" element={<Action/>}></Route>
+              <Route path="/category_adventure" element={<Adventure/>}></Route>
+              <Route path="/category_strategy" element={<Strategy/>}></Route>
+              <Route path="/category_action" element={<Action/>}></Route>
               <Route path="/products/:id" element={<Details/>}></Route>
           </Routes>
           </BrowserRouter>
