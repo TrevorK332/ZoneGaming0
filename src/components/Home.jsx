@@ -1,7 +1,27 @@
 import Head from "./Head.jsx";
-import {Link} from "react-router-dom";
+import {json, Link} from "react-router-dom";
+import {useEffect, useState} from "react";
 
 export default function Home() {
+
+    const [input, setInput] = useState("");
+
+    const fetchData = (value) => {
+      fetch("http://127.0.0.1:8000/")
+          .then((response) => response.json())
+          .then((json) => {
+              const results = json.filter((user) => {
+                  return value && user && user.name && user.name.toLowerCase().includes(value);
+              });
+              console.log(results);
+          })
+    }
+
+    const handleChange = (value) => {
+      setInput(value)
+        fetchData(value)
+    }
+
     return (
         <>
             <Head/>
@@ -15,8 +35,8 @@ export default function Home() {
                                 <p>ZONE allows you to download your favorite games pre-installed on steam at a reasonable price.</p>
                                 <div className="search-input">
                                     <form id="search" action="/">
-                                        <input type="text" placeholder="Search a title" id='searchText'
-                                               className="searchKeyword"/>
+                                        <input type="text" placeholder="Search a title"
+                                               onChange={(e) => handleChange(e.target.value)}/>
                                         <button className="btn btn-outline-success" type="submit" role="button">Search Now</button>
                                     </form>
                                 </div>

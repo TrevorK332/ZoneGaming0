@@ -6,31 +6,31 @@ import Head from "./Head.jsx";
 //
 export default function Details() {
 
-   const [product, setProduct] = useState([]);
+   const [game, setGame] = useState([]);
 
    const {id} = useParams();
-   const getSingleProduct = async() =>{
-       const {data} = await axios.get(`https://api.apensoftwares.co.ke/api/products/${id}`);
-       setProduct(data);
+   const getSingleGame = async() =>{
+       const {data} = await axios.get(`http://127.0.0.1:8000/${id}`);
+       setGame(data);
    }
 
     useEffect(() => {
-        getSingleProduct();
+        getSingleGame();
     }, []);
 
-   const deleteProduct = async(id) => {
-       await axios.delete(`https://api.apensoftwares.co.ke/api/products/${id}`);
-       Navigate("/products");
-   };
+   // const deleteGame = async(id) => {
+   //     await axios.delete(`http://127.0.0.1:8000/${id}`);
+   //     Navigate("/games");
+   // };
 
     return (
         <>
-                        <Head/>
+            <Head/>
             <div className="page-heading header-text">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <h3>Modern Warfare® II</h3>
+                            <h3>{game.name}</h3>
                             <span className="breadcrumb"><Link to="/">Home</Link> {">"} <Link
                                 to="/games">Games</Link> {">"} Game Details</span>
                         </div>
@@ -43,24 +43,21 @@ export default function Details() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="left-image">
-                                <img src={product.image} alt=""/>
+                                <img src={game.image} alt=""/>
                             </div>
                         </div>
                         <div className="col-lg-6 align-self-center">
-                            <h4>{product.product}</h4>
-                            <span className="price"><em>$28</em> {product.amount}</span>
+                            <h4>{game.name}</h4>
+                            <span className="price"><em>$28</em> {game.amount}</span>
                             <p></p>
                             <form id="qty" action="#">
-                                <input type="qty" className="form-control" id="1" aria-describedby="quantity"
-                                       placeholder={product.quantity}/>
-                                <Link className="btn btn-danger" onClick={()=> deleteProduct(product.id)} to="/products">
+                                <input type="qty" className="form-control" id="1" aria-describedby="quantity"/>
+                                <Link className="btn btn-danger"  to="/products">
                                     <i className="fa fa-shopping-bag"></i> ADD TO CART</Link>
                             </form>
                             <ul>
-                                <li><span>Game ID:</span>{product.product}</li>
+                                <li><span>Game ID:</span> {game.name}</li>
                                 <li><span>Genre:</span> <Link to="/category_action">Action</Link></li>
-                                <li><span>Multi-tags:</span> <a href="#">War</a>, <a href="#">Battle</a>, <a
-                                    href="#">Royal</a></li>
                             </ul>
                         </div>
                         <div className="col-lg-12">
@@ -85,89 +82,14 @@ export default function Details() {
                                                         aria-selected="true">Description
                                                 </button>
                                             </li>
-                                            <li className="nav-item" role="presentation">
-                                                <button className="nav-link" id="reviews-tab" data-bs-toggle="tab"
-                                                        data-bs-target="#reviews" type="button" role="tab"
-                                                        aria-controls="reviews" aria-selected="false">Reviews (3)
-                                                </button>
-                                            </li>
                                         </ul>
                                     </div>
                                     <div className="tab-content" id="myTabContent">
                                         <div className="tab-pane fade show active" id="description" role="tabpanel"
                                              aria-labelledby="description-tab">
-                                            <p>{product.description}</p>
-                                        </div>
-                                        <div className="tab-pane fade" id="reviews" role="tabpanel"
-                                             aria-labelledby="reviews-tab">
-                                            <p>Coloring book air plant shabby chic, crucifix normcore raclette cred swag
-                                                artisan activated charcoal. PBR&B fanny pack pok pok gentrify truffaut
-                                                kitsch helvetica jean shorts edison bulb poutine next level humblebrag
-                                                la croix adaptogen.</p>
+                                            <p>{game.description}</p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="section categories related-games">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <div className="section-heading">
-                                <h2>Related Games</h2>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="main-button">
-                                <Link to="/category">View All</Link>
-                            </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-xs-12">
-                            <div className="item">
-                                <h4>Action</h4>
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/categories-01.jpg"
-                                                                        alt=""/></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-xs-12">
-                            <div className="item">
-                                <h4>Action</h4>
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/categories-05.jpg"
-                                                                        alt=""/></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-xs-12">
-                            <div className="item">
-                                <h4>Action</h4>
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/categories-03.jpg"
-                                                                        alt=""/></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-xs-12">
-                            <div className="item">
-                                <h4>Action</h4>
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/categories-04.jpg"
-                                                                        alt=""/></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg col-sm-6 col-xs-12">
-                            <div className="item">
-                                <h4>Adventure</h4>
-                                <div className="thumb">
-                                    <Link to="/product"><img src="public/assets/images/categories-05.jpg"
-                                                                        alt=""/></Link>
                                 </div>
                             </div>
                         </div>
@@ -181,6 +103,6 @@ export default function Details() {
                     </div>
                 </div>
             </footer>
-            </>
-            )
-            }
+        </>
+    )
+}

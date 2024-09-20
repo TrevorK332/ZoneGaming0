@@ -1,8 +1,21 @@
 import Head from "./Head.jsx";
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+import axios from "axios";
 //
 export default function Adventure() {
 
+       const [game, setGame] = useState([]);
+
+   const {genre_id} = useParams();
+   const getSingleGame = async() =>{
+       const {data} = await axios.get(`http://127.0.0.1:8000/${genre_id}`);
+       setGame(data);
+   }
+
+    useEffect(() => {
+        getSingleGame();
+    }, []);
     return (
         <>
             <Head/>

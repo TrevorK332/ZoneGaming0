@@ -37,7 +37,7 @@ export default function Detailsstr() {
                             </form>
                             <ul>
                                 <li><span>Game ID:</span> Dragon Creed</li>
-                                <li><span>Genre:</span> <Link to="/category_strategy">Adventure</Link></li>
+                                <li><span>Genre:</span> <Link to="/category_strategy">Strategy</Link></li>
                             </ul>
                         </div>
                         <div className="col-lg-12">

@@ -1,7 +1,6 @@
 import './App.css'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./components/Home.jsx";
-import Products from "./components/Products.jsx";
 import Details from "./components/Details.jsx";
 import Navigation from "./components/Navigation.jsx";
 import Games from "./components/Games.jsx";
@@ -27,7 +26,6 @@ function App() {
               <Navigation/>
           <Routes>
               <Route path="/" element={<Home/>}></Route>
-              <Route path="/products" element={<Products/>}></Route>
               <Route path="/games" element={<Games/>}></Route>
               <Route path="/product" element={<Detail01/>}></Route>
               <Route path="/productadv" element={<Detailadv/>}></Route>
@@ -39,7 +37,7 @@ function App() {
               <Route path="/category_adventure" element={<Adventure/>}></Route>
               <Route path="/category_strategy" element={<Strategy/>}></Route>
               <Route path="/category_action" element={<Action/>}></Route>
-              <Route path="/products/:id" element={<Details/>}></Route>
+              <Route path="/game_details/:id" element={<Details/>}></Route>
           </Routes>
           </BrowserRouter>
     </>
