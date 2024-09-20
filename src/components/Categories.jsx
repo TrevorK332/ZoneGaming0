@@ -2,7 +2,7 @@ import Head from "./Head.jsx";
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import axios from "axios";
-
+//
 export default function Categories() {
         const [games, setGames] = useState([]);
 
